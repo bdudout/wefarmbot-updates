@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/bdudout/Documents/FarmBot/Kicad Cam - HDMI/camhdmi/camhdmi.sch</source>
+    <date>Dimanche 12 février 2017 22:36:29</date>
+    <tool>Eeschema 4.0.4-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Cam-hdmi</title>
+        <company>WeFarmbot</company>
+        <rev>0.5</rev>
+        <date>11/02/2017</date>
+        <source>camhdmi.sch</source>
+        <comment number="1" value="Brice Dudout"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>HDMI_A</value>
+      <libsource lib="hdmi" part="HDMI_A"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>589E26BA</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>CONN_01X15</value>
+      <libsource lib="conn" part="CONN_01X15"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>589E27AC</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="conn" part="CONN_01X15">
+      <description>Connector, single row, 01x15</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X15</fp>
+        <fp>Pin_Header_Angled_1X15</fp>
+        <fp>Socket_Strip_Straight_1X15</fp>
+        <fp>Socket_Strip_Angled_1X15</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X15</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+        <pin num="15" name="P15" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hdmi" part="HDMI_A">
+      <footprints>
+        <fp>FCI_10029449-111RLF</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HDMI_A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TMDS_DATA2_P" type="BiDi"/>
+        <pin num="2" name="TMDS_DATA2_SHLD" type="BiDi"/>
+        <pin num="3" name="TMDS_DATA2_N" type="BiDi"/>
+        <pin num="4" name="TMDS_DATA1_P" type="BiDi"/>
+        <pin num="5" name="TMDS_DATA1_SHLD" type="BiDi"/>
+        <pin num="6" name="TMDS_DATA1_N" type="BiDi"/>
+        <pin num="7" name="TMDS_DATA0_P" type="BiDi"/>
+        <pin num="8" name="TMDS_DATA0_SHLD" type="BiDi"/>
+        <pin num="9" name="TMDS_DATA0_N" type="BiDi"/>
+        <pin num="10" name="TMDS_CLOCK_P" type="BiDi"/>
+        <pin num="11" name="TMDS_CLOCK_SHLD" type="BiDi"/>
+        <pin num="12" name="TMDS_CLOCK_N" type="BiDi"/>
+        <pin num="13" name="RESERVED/CEC" type="BiDi"/>
+        <pin num="14" name="HEC_DATA_N" type="BiDi"/>
+        <pin num="15" name="DDC_SCL" type="BiDi"/>
+        <pin num="16" name="DDC_SDA" type="BiDi"/>
+        <pin num="17" name="DDC/CEC/HEC_GND" type="BiDi"/>
+        <pin num="18" name="+5V" type="BiDi"/>
+        <pin num="19" name="HP_DETECT/HEC_DATA_P" type="BiDi"/>
+        <pin num="SHLD" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>/Library/Application Support/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="hdmi">
+      <uri>/Users/bdudout/Documents/FarmBot/Kicad Cam - HDMI/library-kicad-master/hdmi.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(J1-Pad10)">
+      <node ref="J1" pin="17"/>
+      <node ref="J1" pin="16"/>
+      <node ref="J1" pin="15"/>
+      <node ref="J1" pin="14"/>
+      <node ref="J1" pin="13"/>
+      <node ref="J1" pin="12"/>
+      <node ref="J1" pin="11"/>
+      <node ref="J1" pin="10"/>
+      <node ref="J1" pin="9"/>
+      <node ref="J1" pin="8"/>
+      <node ref="J1" pin="7"/>
+      <node ref="J1" pin="6"/>
+      <node ref="J1" pin="5"/>
+      <node ref="J1" pin="4"/>
+      <node ref="J1" pin="3"/>
+      <node ref="P1" pin="14"/>
+      <node ref="P1" pin="13"/>
+      <node ref="P1" pin="12"/>
+      <node ref="P1" pin="11"/>
+      <node ref="P1" pin="10"/>
+      <node ref="P1" pin="9"/>
+      <node ref="P1" pin="8"/>
+      <node ref="P1" pin="7"/>
+      <node ref="P1" pin="6"/>
+      <node ref="P1" pin="5"/>
+      <node ref="P1" pin="4"/>
+      <node ref="P1" pin="3"/>
+      <node ref="P1" pin="15"/>
+    </net>
+    <net code="2" name="Net-(J1-Pad2)">
+      <node ref="P1" pin="2"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="3" name="Net-(J1-Pad1)">
+      <node ref="J1" pin="1"/>
+      <node ref="P1" pin="1"/>
+    </net>
+    <net code="4" name="Net-(J1-PadSHLD)">
+      <node ref="J1" pin="SHLD"/>
+    </net>
+    <net code="5" name="Net-(J1-Pad19)">
+      <node ref="J1" pin="19"/>
+    </net>
+    <net code="6" name="Net-(J1-Pad18)">
+      <node ref="J1" pin="18"/>
+    </net>
+  </nets>
+</export>
